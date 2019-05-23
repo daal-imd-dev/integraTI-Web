@@ -1,6 +1,6 @@
 image: node:alpine
 variables:
-  PUBLIC_URL: /my-awesome-app
+  PUBLIC_URL: /integra-ti
 cache:
   paths:
   - node_modules
