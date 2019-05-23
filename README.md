@@ -1,3 +1,10 @@
+
+## Update  do repositório remoto para o local
+
+*  git pull 
+*  git diff master origin/master
+*  git push origin master
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
