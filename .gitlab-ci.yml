@@ -1,25 +1,20 @@
+image: node:alpine
+variables:
+  PUBLIC_URL: /my-awesome-app
+cache:
+  paths:
+  - node_modules
 stages:
-  - code_quality
-  - test
-  - build
-eslint:
-  image: node:8.16.0
-  stage: code_quality
-  before_script:
-    - npm install -g eslint
+- deploy
+pages:
+  stage: deploy
   script:
-    - eslint -- --ext .jsx,.js src/
-unit_tests:
-  image: node:8.16.0
-  stage: test
-  before_script:
-    - npm install
-  script:
-    - npm test
-react_build:
-  image: node:8.16.0
-  stage: build
-  before_script:
-    - npm install
-  script:
-    - npm run-script build
+    - npm install # Install all dependencies
+    - npm run build --prod # Build for prod
+    - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
+    - mv build public # Move build files to public dir for Gitlab Pages
+  artifacts:
+    paths:
+    - public # The built files for Gitlab Pages to serve
+  only:
+    - master # Only run on master branch
