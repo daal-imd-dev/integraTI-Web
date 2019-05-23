@@ -9,7 +9,7 @@ eslint:
   before_script:
     - npm install -g eslint
   script:
-    - eslint --ext .jsx,.js src/
+    - eslint -- --ext .jsx,.js src/
 unit_tests:
   image: node:8.16.0
   stage: test
