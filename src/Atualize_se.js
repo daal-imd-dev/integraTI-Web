@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Nave from './Nave'
 
 
-class Home extends Component{
+class Atualize_se extends Component{
     render(){
         return(
             <div className="Navbar">
@@ -13,4 +13,4 @@ class Home extends Component{
 
 }
 
-export default Home
+export default Atualize_se
