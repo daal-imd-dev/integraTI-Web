@@ -1,6 +1,8 @@
 image: node:alpine
 variables:
   PUBLIC_URL: /integra-ti
+  SITE_ID: 5c37bcca-17f1-4a2b-9d4a-bf7379b6620b
+  NETLIFY_AUTH_TOKEN: 7c3a16732bf8d819cdfc39e4d62ff2a8aae5cbbd66904da30718b93c919f0a8f
 cache:
   paths:
   - node_modules
