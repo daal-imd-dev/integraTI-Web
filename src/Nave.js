@@ -1,14 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   Navbar,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+   } from 'reactstrap';
 
   class Nave extends React.Component {
 
