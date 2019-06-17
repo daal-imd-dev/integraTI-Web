@@ -1,11 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Col, Row, Card} from 'reactstrap';
+import UserProfile from './User_Profile';
 
 class Seja_visto extends Component{
     render(){
         return(
-            <div className="Container">
-                
-            </div>
+            <Row>
+                <Col sm="6">
+                    <Card className="cardProfile">
+                        <UserProfile/>
+                    </Card>
+                    <Card className="cardProfile">
+                        <UserProfile/>
+                    </Card>
+                </Col>
+                <Col sm="6">
+                    <Card className="cardProfile">
+                        <UserProfile/>
+                    </Card>
+                    <Card className="cardProfile">
+                        <UserProfile/>
+                    </Card>
+                </Col>
+            </Row>
         );
     }
 
