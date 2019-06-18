@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Col, Row, Container} from 'reactstrap';
 
 class Home extends Component{
     render(){
         return(
-            <div className="Container">
-                
-            </div>
+            <Container>
+                <Row>
+                    <Col sm="12" md={{ size: 6, offset: 3 }}>
+                        {/* Colocar texto aqui !!! */}
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 
