@@ -15,10 +15,10 @@ class Main extends React.Component{
                   <HashRouter>
                     <Switch>
                     <Route exact path='/home' component={Home}/>
-                    <Route path='/sejavisto' component={Sejavisto}/>
-                    <Route path='/atualizese' component={Atualizese}/>
-                    <Route path='/aboutus' component={Aboutus}/>
-                    <Route path='/faqs' component={Faqs}/>
+                    <Route path='#/sejavisto' component={Sejavisto}/>
+                    <Route path='#/atualizese' component={Atualizese}/>
+                    <Route path='#/aboutus' component={Aboutus}/>
+                    <Route path='#/faqs' component={Faqs}/>
                     </Switch>
                   </HashRouter>
                 </Container>
