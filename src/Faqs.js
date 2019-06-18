@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Col, Row, Container, Card, CardBody, ListGroupItem, Collapse} from 'reactstrap';
+import {Col, Row, Container, Card, CardBody} from 'reactstrap';
 import ListaFaqs from './ListaFaqs';
 
 const lista = {
